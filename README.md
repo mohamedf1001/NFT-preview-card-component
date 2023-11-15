@@ -20,8 +20,8 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 
 ### Links
 
-- Solution URL: [My Solution](https://github.com/mohamedf1001/fylo-data-storage-component-master)
-- Live Site URL: [Live Preview](https://mohamedf1001.github.io/fylo-data-storage-component-master/)
+- Solution URL: [My Solution]([https://github.com/mohamedf1001/fylo-data-storage-component-master](https://github.com/mohamedf1001/NFT-preview-card-component))
+- Live Site URL: [Live Preview]([https://mohamedf1001.github.io/fylo-data-storage-component-master/](https://mohamedf1001.github.io/NFT-preview-card-component/))
 
 ### Built with
 
