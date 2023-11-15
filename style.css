@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--main-BG);
+}
+
+.continr {
+    background-color: var(--card-BG);
+    width: 300px;
+    height: 500px;
+    margin: 60px auto;
+    box-shadow: 10px 10px 15px #00000094;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.continr:hover .imge::before,
+.continr:hover .imge::after {
+    display: block;
+}
+
+
+.continr .imge {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.continr .imge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.continr .imge::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: hsl(178deg 100% 50% / 30%);
+    border-radius: 8px;
+    display: none;
+}
+
+.continr .imge::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(./images/icon-view.svg);
+    display: none;
+}
+
+
+.continr .info {
+    margin-top: 18px;
+}
+
+.continr .info .titlel {
+    color: var(--White);
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.continr:hover .info .titlel {
+    color: hsl(178deg 100% 50% / 30%);
+}
+
+.continr .info .text {
+    line-height: 1.4;
+    color: var(--Soft-blue);
+    /* margin-bottom: 10px; */
+}
+
+.continr .info .date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date span {
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.date .eth {
+    color: var(--Cyan);
+    font-weight: bold;
+}
+
+.date .clock {
+    color: var(--Soft-blue);
+}
+
+
+
+.continr .avtar {
+    display: flex;
+    margin-top: 40px;
+    padding-top: 9px;
+    border-top: 1px solid var(--line);
+}
+
+.continr .avtar img {
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
+    border-radius: 50%;
+}
+
+.continr .avtar p {
+    color: var(--Soft-blue);
+    font-weight: bold;
+}
+
+.continr .avtar span {
+    color: white;
+    transition: 0.5s;
+}
+
+.continr:hover .avtar span {
+    color: hsl(178deg 100% 50% / 30%);
+}
